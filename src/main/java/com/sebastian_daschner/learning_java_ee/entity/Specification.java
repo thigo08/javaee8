@@ -2,20 +2,31 @@ package com.sebastian_daschner.learning_java_ee.entity;
 
 public class Specification {
 
-    private final Color color;
-    private final EngineType engineType;
+	private Color color;
 
-    public Specification(Color color, EngineType engineType) {
-        this.color = color;
-        this.engineType = engineType;
-    }
+	private EngineType engineType;
 
-    public Color getColor() {
-        return color;
-    }
+	public Specification() {
+	}
 
-    public EngineType getEngineType() {
-        return engineType;
-    }
+	public Specification(Color color, EngineType engineType) {
+		this.color = color;
+		this.engineType = engineType;
+	}
 
+	public Color getColor() {
+		return color;
+	}
+
+	public EngineType getEngineType() {
+		return engineType;
+	}
+
+	public void setColor(Color color) {
+		this.color = color;
+	}
+
+	public void setEngineType(EngineType engineType) {
+		this.engineType = engineType;
+	}
 }

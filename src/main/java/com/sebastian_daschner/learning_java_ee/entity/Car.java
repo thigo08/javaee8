@@ -2,31 +2,36 @@ package com.sebastian_daschner.learning_java_ee.entity;
 
 public class Car {
 
-    private String identifier;
-    private Color color;
-    private EngineType engineType;
+	private String identifier;
+	private Color color;
+	private EngineType engineType;
 
-    public String getIdentifier() {
-        return identifier;
-    }
+	public String getIdentifier() {
+		return identifier;
+	}
 
-    public void setIdentifier(String identifier) {
-        this.identifier = identifier;
-    }
+	public void setIdentifier(String identifier) {
+		this.identifier = identifier;
+	}
 
-    public Color getColor() {
-        return color;
-    }
+	public Color getColor() {
+		return color;
+	}
 
-    public void setColor(Color color) {
-        this.color = color;
-    }
+	public void setColor(Color color) {
+		this.color = color;
+	}
 
-    public EngineType getEngineType() {
-        return engineType;
-    }
+	public EngineType getEngineType() {
+		return engineType;
+	}
 
-    public void setEngineType(EngineType engineType) {
-        this.engineType = engineType;
-    }
+	public void setEngineType(EngineType engineType) {
+		this.engineType = engineType;
+	}
+
+	@Override
+	public String toString() {
+		return "Car{" + "identifier='" + identifier + '\'' + ", color=" + color + ", engineType=" + engineType + '}';
+	}
 }
